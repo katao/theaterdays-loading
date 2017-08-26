@@ -90,7 +90,8 @@
     font-size: 40px;
 }
 .theaterdays-banner p.connecting img {
-
+  width: 40px;
+  margin: 15px 0 0 15px;
 }
 .theaterdays-banner p.nowloading {
     bottom: 22px;
@@ -125,25 +126,26 @@
 
 @-webkit-keyframes animation_chara {
   0%{
-    -webkit-transform: scale(1, 1);
     }
   48%{
-    -webkit-transform: scale(1, 1);
+    -webkit-transform: translate(0, -8px);
     }
   50%{
-    -webkit-transform: scale(1.1, 0.9);
+    -webkit-transform: translate(0, -5px);
     }
   53%{
-    -webkit-transform: scale(0.9, 1.1) translate(0, -8px);
+    -webkit-transform: translate(0, 0px);
     }
   57.5%{
-    -webkit-transform: scale(1, 1) translate(0, -5px);
+    -webkit-transform: translate(0, -12px);
     }
   59%{
-    -webkit-transform: scale(1, 1) translate(0, 0px);
+    -webkit-transform: translate(0, -6px);
     }
+  63%{
+    -webkit-transform: translate(0, 0px);
+  }
   100% {
-    -webkit-transform: scale(1, 1);
   }
 }
 

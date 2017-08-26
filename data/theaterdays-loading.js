@@ -42,6 +42,11 @@ Pace.on('start', function() {
     connecting.appendChild(document.createTextNode('Connecting'));
     banner.appendChild(connecting);
     // loading img
+    var image = document.createElement('img');
+    //image.src = "https://lh3.google.com/u/0/d/0BxDxR5Rx2HkfdVh0SnlqNlRaWHM=w1440-h696-iv1";
+
+    image.src = "https://lh3.google.com/u/0/d/0BxDxR5Rx2HkfWGtaR3Bmd08zR1E=w871-h659-iv1";
+    connecting.appendChild(image);
 
     var nowLoading = document.createElement('p');
     nowLoading.className = 'nowloading';
