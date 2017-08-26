@@ -1,10 +1,10 @@
 {
-  "title": "Starlight Loading",
-  "name": "starlight-loading",
-  "version": "0.1.3",
-  "description": "Starlight Stage Load Screen Emulator",
+  "title": "TheaterDays Loading",
+  "name": "theaterdays-loading",
+  "version": "0.1.0",
+  "description": "TheaterDays Load Screen Emulator",
   "main": "index.js",
-  "author": "megane42",
+  "author": "katao",
   "icon": "resource://starlight-loading/data/icon48.png",
   "homepage": "http://starlight.tsudanuma-studio.net/",
   "updateURL": "https://github.com/megane42/starlight-loading/blob/master/starlight-loading-latest.update.rdf?raw=true",
@@ -23,10 +23,10 @@
     "uglifyjs": "^2.4.10"
   },
   "scripts": {
-    "cat-js"    : "cat data/pace-option.js data/pace.min.js data/starlight-loading.js",
-    "cat-css"   : "cat data/mplus-1p-bold-sub-woff.css data/pace.css data/starlight-loading.css",
-    "build-js"  : "npm run -s cat-js  | uglifyjs --compress --mangle - -o starlight-loading.min.js",
-    "build-css" : "npm run -s cat-css | cleancss -o starlight-loading.min.css",
+    "cat-js"    : "cat data/pace-option.js data/pace.min.js data/theaterdays-loading.js",
+    "cat-css"   : "cat data/pace.css data/theaterdays-loading.css",
+    "build-js"  : "npm run -s cat-js  | uglifyjs --compress --mangle - -o theaterdays-loading.min.js",
+    "build-css" : "npm run -s cat-css | cleancss -o theaterdays-loading.min.css",
     "build"     : "npm run build-js && npm run build-css"
   }
 }

@@ -1,0 +1,164 @@
+.theaterdays-loading div {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+
+.theaterdays-loading p {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+
+.theaterdays-back {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    z-index: 15000;
+    position: fixed;
+}
+
+.theaterdays-panel {
+  display:none;
+}
+
+.theaterdays-panel p {
+    color: #363636;
+    font-size: 17px;
+    font-family: 'M+ 1p bold';
+    line-height: 1.4em;
+    transform: rotate(0.028deg);
+}
+
+.theaterdays-panel .message-up {
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    position: relative;
+    top: 32px;
+    left: 128px;
+}
+
+.theaterdays-panel .message-down {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    position: relative;
+    top: 63px;
+}
+
+.theaterdays-panel .progress-border {
+  display:none;
+    border: 1px #000 solid;
+    border-radius: 3px;
+    width: 424px;
+    height: 18px;
+    z-index: 17000;
+    position: fixed;
+    left: 79px;
+    bottom: 92px;
+}
+
+.theaterdays-ratio {
+  display:none;
+/*
+    bottom: 114px;
+    left: 355px;
+    z-index: 17000;
+    position: fixed;
+    color: #363636;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'M+ 1p bold';
+    line-height: 1.6em;
+*/
+    /* for anti alias */
+    transform: rotate(0.028deg);
+}
+.theaterdays-banner p {
+    z-index: 16000;
+    position: fixed;
+    font-family: 'M+ 1p bold';
+    line-height: 1.4em;
+}
+.theaterdays-banner p.connecting {
+    bottom: 82px;
+    right: 240px;
+    color: #FFF;
+    font-size: 40px;
+}
+.theaterdays-banner p.connecting img {
+
+}
+.theaterdays-banner p.nowloading {
+    bottom: 22px;
+    right: 170px;
+    color: #F4F871;
+    font-size: 36px;
+}
+.theaterdays-banner p.nowloading:before {
+  position:absolute;
+  top:0;
+  left:0;
+  color:#F4F871;
+}
+.theaterdays-banner p.nowloading:before {
+  display:block;
+  content:attr(title);
+  color:#E1BA2C;
+  -webkit-mask-image:-webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1));
+}
+.theaterdays-banner p.chara {
+    bottom: 22px;
+    right: 50px;
+}
+.theaterdays-banner p.chara img {
+  width: 80px;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: bottom center;
+  -webkit-animation-name: animation_chara;
+}
+
+@-webkit-keyframes animation_chara {
+  0%{
+    -webkit-transform: scale(1, 1);
+    }
+  48%{
+    -webkit-transform: scale(1, 1);
+    }
+  50%{
+    -webkit-transform: scale(1.1, 0.9);
+    }
+  53%{
+    -webkit-transform: scale(0.9, 1.1) translate(0, -8px);
+    }
+  57.5%{
+    -webkit-transform: scale(1, 1) translate(0, -5px);
+    }
+  59%{
+    -webkit-transform: scale(1, 1) translate(0, 0px);
+    }
+  100% {
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+
+.theaterdays-loading.hide {
+    display: none;
+}
+
+.theaterdays-loading .chara {
+  z-index: 16000;
+  right: 100px;
+  bottom: 100px;
+}
+
+.pace,
+.pace .pace-progress {
+  display: none;
+}
